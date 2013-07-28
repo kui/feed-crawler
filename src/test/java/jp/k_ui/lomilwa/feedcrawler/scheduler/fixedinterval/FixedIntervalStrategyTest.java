@@ -58,7 +58,7 @@ public class FixedIntervalStrategyTest {
         assertEquals(1, strategy.getFeedQueue().size());
 
         Callback cb = strategy.getCallback(mockFeedInfo);
-        cb.failure(new Exception());
+        cb.failed(new Exception());
 
         assertEquals(2, strategy.getFeedQueue().size());
     }

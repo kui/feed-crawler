@@ -26,9 +26,9 @@ public class MultiCastDelegationCallback extends AbstractCallback {
     }
 
     @Override
-    public void failure(Exception ex) {
+    public void failed(Exception ex) {
         for (Callback cb : callbacks)
-            cb.failure(ex);
+            cb.failed(ex);
     }
 
     @Override

@@ -8,7 +8,7 @@ import jp.k_ui.lomilwa.feedcrawler.agent.Callback;
  * 
  * <p>
  * implement {@link Callback#completed(com.sun.syndication.feed.synd.SyndFeed)},
- * {@link Callback#cancelled()}, {@link Callback#failure(Exception)}
+ * {@link Callback#cancelled()}, {@link Callback#failed(Exception)}
  * 
  * @author ui_keiichiro
  */

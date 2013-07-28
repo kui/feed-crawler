@@ -109,7 +109,7 @@ public class HttpAsyncClientCrawlerAgent implements CrawlerAgent {
 
         @Override
         public void failed(Exception ex) {
-            callback.failure(ex);
+            callback.failed(ex);
         }
 
         @Override

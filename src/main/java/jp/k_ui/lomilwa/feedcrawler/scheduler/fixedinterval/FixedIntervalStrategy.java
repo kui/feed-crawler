@@ -38,7 +38,7 @@ public class FixedIntervalStrategy implements
             }
 
             @Override
-            public void failure(Exception ex) {
+            public void failed(Exception ex) {
                 feedQueue.add(feedInfo);
             }
 

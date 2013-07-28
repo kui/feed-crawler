@@ -119,7 +119,7 @@ public class FeedCrawler {
             try {
                 updateFeedInfo(feed);
             } catch (MalformedURLException e) {
-                failure(e);
+                failed(e);
             }
         }
 
@@ -131,7 +131,7 @@ public class FeedCrawler {
         }
 
         @Override
-        public void failure(Exception ex) {
+        public void failed(Exception ex) {
             LOG.warn("request faildure: {}", feedInfo);
         }
 
