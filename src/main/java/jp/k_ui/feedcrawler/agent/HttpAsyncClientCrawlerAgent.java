@@ -1,10 +1,10 @@
-package jp.k_ui.lomilwa.feedcrawler.agent;
+package jp.k_ui.feedcrawler.agent;
 
 import java.io.*;
 import java.net.URISyntaxException;
 import java.util.zip.GZIPInputStream;
 
-import jp.k_ui.lomilwa.feedcrawler.FeedInfo;
+import jp.k_ui.feedcrawler.FeedInfo;
 
 import org.apache.http.*;
 import org.apache.http.client.methods.*;

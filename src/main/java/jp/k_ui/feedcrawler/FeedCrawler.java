@@ -1,13 +1,13 @@
-package jp.k_ui.lomilwa.feedcrawler;
+package jp.k_ui.feedcrawler;
 
 import java.net.*;
 import java.util.*;
 
-import jp.k_ui.lomilwa.feedcrawler.agent.*;
-import jp.k_ui.lomilwa.feedcrawler.processor.FeedProcessor;
-import jp.k_ui.lomilwa.feedcrawler.scheduler.*;
-import jp.k_ui.lomilwa.feedcrawler.scheduler.CrawlerScheduler.FeedClient;
-import jp.k_ui.lomilwa.feedcrawler.scheduler.fixedinterval.FixedIntervalScheduler;
+import jp.k_ui.feedcrawler.agent.*;
+import jp.k_ui.feedcrawler.processor.FeedProcessor;
+import jp.k_ui.feedcrawler.scheduler.*;
+import jp.k_ui.feedcrawler.scheduler.CrawlerScheduler.FeedClient;
+import jp.k_ui.feedcrawler.scheduler.fixedinterval.FixedIntervalScheduler;
 
 import org.slf4j.*;
 

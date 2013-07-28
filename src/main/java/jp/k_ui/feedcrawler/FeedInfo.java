@@ -1,4 +1,4 @@
-package jp.k_ui.lomilwa.feedcrawler;
+package jp.k_ui.feedcrawler;
 
 import java.net.URL;
 import java.util.Date;

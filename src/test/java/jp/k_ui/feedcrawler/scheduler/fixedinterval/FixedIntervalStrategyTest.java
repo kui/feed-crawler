@@ -1,11 +1,12 @@
-package jp.k_ui.lomilwa.feedcrawler.scheduler.fixedinterval;
+package jp.k_ui.feedcrawler.scheduler.fixedinterval;
 
 import static org.junit.Assert.*;
 
 import java.util.*;
 
-import jp.k_ui.lomilwa.feedcrawler.FeedInfo;
-import jp.k_ui.lomilwa.feedcrawler.agent.Callback;
+import jp.k_ui.feedcrawler.FeedInfo;
+import jp.k_ui.feedcrawler.agent.Callback;
+import jp.k_ui.feedcrawler.scheduler.fixedinterval.FixedIntervalStrategy;
 import mockit.NonStrictExpectations;
 
 import org.junit.*;

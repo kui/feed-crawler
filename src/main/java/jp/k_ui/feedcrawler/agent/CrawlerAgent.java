@@ -1,6 +1,6 @@
-package jp.k_ui.lomilwa.feedcrawler.agent;
+package jp.k_ui.feedcrawler.agent;
 
-import jp.k_ui.lomilwa.feedcrawler.FeedInfo;
+import jp.k_ui.feedcrawler.FeedInfo;
 
 public interface CrawlerAgent {
 

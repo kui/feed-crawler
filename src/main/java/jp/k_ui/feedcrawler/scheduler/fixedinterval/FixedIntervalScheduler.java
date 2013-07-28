@@ -1,12 +1,12 @@
-package jp.k_ui.lomilwa.feedcrawler.scheduler.fixedinterval;
+package jp.k_ui.feedcrawler.scheduler.fixedinterval;
 
 import java.util.*;
 import java.util.concurrent.*;
 
-import jp.k_ui.lomilwa.feedcrawler.FeedInfo;
-import jp.k_ui.lomilwa.feedcrawler.agent.Callback;
-import jp.k_ui.lomilwa.feedcrawler.processor.FeedProcessor;
-import jp.k_ui.lomilwa.feedcrawler.scheduler.CrawlerScheduler;
+import jp.k_ui.feedcrawler.FeedInfo;
+import jp.k_ui.feedcrawler.agent.Callback;
+import jp.k_ui.feedcrawler.processor.FeedProcessor;
+import jp.k_ui.feedcrawler.scheduler.CrawlerScheduler;
 
 public class FixedIntervalScheduler implements CrawlerScheduler {
 

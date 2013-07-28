@@ -1,9 +1,9 @@
-package jp.k_ui.lomilwa.feedcrawler.scheduler;
+package jp.k_ui.feedcrawler.scheduler;
 
 import java.util.Collection;
 
-import jp.k_ui.lomilwa.feedcrawler.FeedInfo;
-import jp.k_ui.lomilwa.feedcrawler.agent.Callback;
+import jp.k_ui.feedcrawler.FeedInfo;
+import jp.k_ui.feedcrawler.agent.Callback;
 
 /**
  * A feed fetching executer.

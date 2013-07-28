@@ -1,7 +1,7 @@
-package jp.k_ui.lomilwa.feedcrawler.processor;
+package jp.k_ui.feedcrawler.processor;
 
-import jp.k_ui.lomilwa.feedcrawler.FeedInfo;
-import jp.k_ui.lomilwa.feedcrawler.agent.Callback;
+import jp.k_ui.feedcrawler.FeedInfo;
+import jp.k_ui.feedcrawler.agent.Callback;
 
 /**
  * A main processor class for feeds.

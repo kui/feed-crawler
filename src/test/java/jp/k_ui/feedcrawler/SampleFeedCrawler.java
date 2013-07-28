@@ -1,11 +1,11 @@
-package jp.k_ui.lomilwa.feedcrawler;
+package jp.k_ui.feedcrawler;
 
 import java.net.URL;
 import java.util.*;
 
-import jp.k_ui.lomilwa.feedcrawler.agent.*;
-import jp.k_ui.lomilwa.feedcrawler.processor.FeedProcessor;
-import jp.k_ui.lomilwa.feedcrawler.scheduler.fixedinterval.*;
+import jp.k_ui.feedcrawler.agent.*;
+import jp.k_ui.feedcrawler.processor.FeedProcessor;
+import jp.k_ui.feedcrawler.scheduler.fixedinterval.*;
 
 public class SampleFeedCrawler {
 

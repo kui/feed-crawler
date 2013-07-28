@@ -1,10 +1,10 @@
-package jp.k_ui.lomilwa.feedcrawler.scheduler.fixedinterval;
+package jp.k_ui.feedcrawler.scheduler.fixedinterval;
 
 import java.util.*;
 import java.util.concurrent.PriorityBlockingQueue;
 
-import jp.k_ui.lomilwa.feedcrawler.FeedInfo;
-import jp.k_ui.lomilwa.feedcrawler.agent.Callback;
+import jp.k_ui.feedcrawler.FeedInfo;
+import jp.k_ui.feedcrawler.agent.Callback;
 
 import com.sun.syndication.feed.synd.SyndFeed;
 
