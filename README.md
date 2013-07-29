@@ -5,8 +5,8 @@ An crawler framework for feeds.
 
 implement [FeedProcessor][] and [AbstractCallback][].
 
-[FeedProcessor]: https://github.com/kui/feed-crawler/blob/master/src/main/java/jp/k_ui/lomilwa/feedcrawler/processor/FeedProcessor.java
-[AbstractCallback]: https://github.com/kui/feed-crawler/blob/master/src/main/java/jp/k_ui/lomilwa/feedcrawler/agent/AbstractCallback.java
+[FeedProcessor]: https://github.com/kui/feed-crawler/blob/master/src/main/java/jp/k_ui/feedcrawler/processor/FeedProcessor.java
+[AbstractCallback]: https://github.com/kui/feed-crawler/blob/master/src/main/java/jp/k_ui/feedcrawler/agent/AbstractCallback.java
 
 
 Sample
