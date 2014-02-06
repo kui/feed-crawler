@@ -13,7 +13,7 @@ import jp.k_ui.feedcrawler.agent.Callback;
 public interface CrawlerScheduler {
 
     /**
-     * initialize and set a feed requestor
+     * initialize and set a feed request
      * 
      * @param req
      */

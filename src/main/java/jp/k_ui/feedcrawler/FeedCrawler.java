@@ -28,9 +28,10 @@ public class FeedCrawler {
             @Override
             public void request(FeedInfo feedInfo, Callback callback) {
                 LOG.debug("request {}", feedInfo);
-                agent.request(feedInfo, new MultiCastDelegationCallback(
-                        feedInfo, new FeedInfoUpdateCallback(feedInfo),
-                        callback, processor.getCallback(feedInfo)));
+                Callback cb = new MultiCastDelegationCallback(feedInfo,
+                        new FeedInfoUpdateCallback(feedInfo), callback,
+                        processor.getCallback(feedInfo));
+                agent.request(feedInfo, cb);
             }
         }, feedInfoCollection);
     }

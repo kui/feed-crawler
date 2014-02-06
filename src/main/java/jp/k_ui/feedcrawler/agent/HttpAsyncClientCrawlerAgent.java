@@ -99,8 +99,7 @@ public class HttpAsyncClientCrawlerAgent implements CrawlerAgent {
                             contentType.getValue(), true);
                 }
 
-                SyndFeedInput syndFeedInput = new SyndFeedInput();
-                return syndFeedInput.build(reader);
+                return new SyndFeedInput().build(reader);
             } finally {
                 if (stream != null)
                     stream.close();

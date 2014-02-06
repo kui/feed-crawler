@@ -48,7 +48,6 @@ public class FixedIntervalScheduler implements CrawlerScheduler {
     }
 
     private void runOneIteration() {
-        System.out.println(new Date());
         for (FeedInfo feedInfo : strategy.fetchTargetFeeds())
             client.request(feedInfo, strategy.getCallback(feedInfo));
     }
@@ -67,11 +66,11 @@ public class FixedIntervalScheduler implements CrawlerScheduler {
     /**
      * set a interval which this scheduler poll the strategy at
      * 
-     * @param checkIntervalSecond
+     * @param checkIntervalSeconds
      *            interval [sec]
      */
-    public void setCheckInterval(long checkIntervalSecond) {
-        this.checkInterval = checkIntervalSecond;
+    public void setCheckInterval(long checkIntervalSeconds) {
+        this.checkInterval = checkIntervalSeconds;
     }
 
     public long getCheckInterval() {
@@ -94,7 +93,7 @@ public class FixedIntervalScheduler implements CrawlerScheduler {
     public interface CrawlerStrategy {
 
         /**
-         * Derive the feed which should be crawled on the interation.
+         * Derive the feed which should be crawled on a interaction.
          * 
          * <p>
          * This method will not return {@code null}.
@@ -104,7 +103,7 @@ public class FixedIntervalScheduler implements CrawlerScheduler {
         List<FeedInfo> fetchTargetFeeds();
 
         /**
-         * return callback to feedback this Strategy.
+         * return callback to feedback this strategy.
          * 
          * <p>
          * <strong>Do not implement feeds processing.</strong> A main processing

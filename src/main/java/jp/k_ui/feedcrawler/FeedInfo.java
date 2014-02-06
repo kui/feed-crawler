@@ -4,7 +4,7 @@ import java.net.URL;
 import java.util.Date;
 
 /**
- * feed infomation about title or the feed URL etc.
+ * feed information about title or the feed URL etc.
  * 
  * @author ui_keiichiro
  */
@@ -66,10 +66,10 @@ public class FeedInfo {
     }
 
     @Override
-    public String toString() {
-        return "FeedInfo [subscribedDate=" + subscribedDate
-                + ", lastFetchDate=" + lastFetchDate + ", xmlUrl=" + feedUrl
-                + ", htmlUrl=" + htmlUrl + ", title=" + title + ", type="
-                + type + "]";
-    }
+	public String toString() {
+		return "FeedInfo [title=" + title + ", subscribedDate="
+				+ subscribedDate + ", lastFetchDate=" + lastFetchDate
+				+ ", feedUrl=" + feedUrl + ", htmlUrl=" + htmlUrl + ", type="
+				+ type + "]";
+	}
 }

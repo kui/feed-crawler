@@ -21,8 +21,8 @@ public class FixedIntervalStrategy implements
     }
 
     public FixedIntervalStrategy(Collection<FeedInfo> feedInfoCollection,
-            long crawlingIntervalSecond) {
-        setCrawlingInterval(crawlingIntervalSecond);
+            long crawlingIntervalSeconds) {
+        setCrawlingInterval(crawlingIntervalSeconds);
         feedQueue = new PriorityBlockingQueue<>(feedInfoCollection.size(),
                 new FeedInfoLastFetchComparator());
         feedQueue.addAll(feedInfoCollection);
@@ -66,7 +66,6 @@ public class FixedIntervalStrategy implements
         FeedInfo feedInfo;
         while ((feedInfo = popOlderFeedInfoThan(threshold)) != null)
             targets.add(feedInfo);
-        // System.out.printf("pop " + targets.size() + " feedInfo\n");
         return targets;
     }
 
@@ -103,9 +102,13 @@ public class FixedIntervalStrategy implements
                 return -1;
             if (b.getLastFetchDate() == null)
                 return 1;
-
-            return (int) (a.getLastFetchDate().getTime() - b.getLastFetchDate()
-                    .getTime());
+            
+            long aTime = a.getLastFetchDate().getTime();
+            long bTime = b.getLastFetchDate().getTime();
+            
+            if (aTime == bTime)     return 0;
+            else if (aTime > bTime) return 1;
+            else/* aTime < bTime */ return -1;
         }
     }
 }
