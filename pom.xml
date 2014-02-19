@@ -4,11 +4,7 @@
   <artifactId>feed-crawler</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>RSS Crawler</name>
-  
-  <properties>
-    <httpclient.version>4.2</httpclient.version>
-  </properties>
-  
+
   <build>
     <plugins>
       <plugin>
@@ -41,11 +37,6 @@
       <artifactId>junit</artifactId>
       <version>4.11</version>
       <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.rometools</groupId>
-      <artifactId>rome-opml</artifactId>
-      <version>1.0</version>
     </dependency>
     <dependency>
       <groupId>rome</groupId>
