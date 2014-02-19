@@ -55,7 +55,7 @@
     <dependency>
       <groupId>org.apache.httpcomponents</groupId>
       <artifactId>httpasyncclient-cache</artifactId>
-      <version>4.0-beta3</version>
+      <version>4.0</version>
       <exclusions>
         <exclusion>
           <artifactId>commons-logging</artifactId>
