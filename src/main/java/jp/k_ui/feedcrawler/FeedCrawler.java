@@ -1,15 +1,20 @@
 package jp.k_ui.feedcrawler;
 
-import java.net.*;
-import java.util.*;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.Collection;
+import java.util.Date;
 
-import jp.k_ui.feedcrawler.agent.*;
+import jp.k_ui.feedcrawler.agent.Callback;
+import jp.k_ui.feedcrawler.agent.CrawlerAgent;
+import jp.k_ui.feedcrawler.agent.MultiCastDelegationCallback;
 import jp.k_ui.feedcrawler.processor.FeedProcessor;
-import jp.k_ui.feedcrawler.scheduler.*;
+import jp.k_ui.feedcrawler.scheduler.CrawlerScheduler;
 import jp.k_ui.feedcrawler.scheduler.CrawlerScheduler.FeedClient;
 import jp.k_ui.feedcrawler.scheduler.fixedinterval.FixedIntervalScheduler;
 
-import org.slf4j.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.sun.syndication.feed.synd.SyndFeed;
 
@@ -128,7 +133,6 @@ public class FeedCrawler {
             feedInfo.setLastFetchDate(new Date());
             feedInfo.setTitle(feed.getTitle());
             feedInfo.setHtmlUrl(new URL(feed.getLink()));
-            feedInfo.setType(feed.getFeedType());
         }
 
         @Override
